@@ -11,9 +11,7 @@ package bg.smg.gallery.model;
  */
 public class Painting {
     private String authorName;
-    private double price;
     private int year;
-    private String info;
     private String icon;
     private String image;
     private int x;
@@ -22,16 +20,16 @@ public class Painting {
     public Painting() {
     }
 
-    public Painting(String authorName, double price, int year, String info, String icon, String image, int x, int y) {
+    public Painting(String authorName, int year, String icon, String image, int x, int y) {
         this.authorName = authorName;
-        this.price = price;
         this.year = year;
-        this.info = info;
         this.icon = icon;
         this.image = image;
         this.x = x;
         this.y = y;
     }
+
+
 
     public String getIcon() {
         return icon;
@@ -79,13 +77,6 @@ public class Painting {
         this.authorName = authorName;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
     public int getYear() {
         return year;
@@ -93,14 +84,6 @@ public class Painting {
 
     public void setYear(int year) {
         this.year = year;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
     }
 
     

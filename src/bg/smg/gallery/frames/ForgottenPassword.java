@@ -20,12 +20,12 @@ public class ForgottenPassword extends javax.swing.JFrame {
      */
     ForgottenPassword() {
         initComponents();
-        setTitle("Галерия - забравена парола");
+        setTitle("La Grâce - забравена парола");
     }
     
     public ForgottenPassword(Data data) {
         initComponents();
-        setTitle("Галерия - забравена парола");
+        setTitle("La Grâce - забравена парола");
         this.data = data;
     }
 

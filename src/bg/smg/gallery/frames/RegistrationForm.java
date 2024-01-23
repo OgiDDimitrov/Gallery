@@ -22,7 +22,7 @@ public class RegistrationForm extends javax.swing.JFrame{
      */
     public RegistrationForm() {
         initComponents();
-        setTitle("Галерия - регистрация");
+        setTitle("La Grâce - регистрация");
     }
     Data data = new Data();
     /**

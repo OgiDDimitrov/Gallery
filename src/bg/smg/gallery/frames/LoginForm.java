@@ -35,7 +35,7 @@ public class LoginForm extends javax.swing.JFrame {
 
     LoginForm() {
         initComponents();
-        setTitle("Галерия - вход");
+        setTitle("La Grâce - вход");
     }
 
     /**

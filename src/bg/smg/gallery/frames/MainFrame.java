@@ -34,7 +34,7 @@ public class MainFrame extends javax.swing.JFrame {
      */
         
     public MainFrame() {
-        setTitle("Галерия - начало");
+        setTitle("La Grâce - начало");
         init(1);
     }
     public MainFrame(User user) {
@@ -79,43 +79,43 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void loadPaintings(){
         //TODO file read
-        Painting p = new Painting("Robert Delaunay", 300000000, 1912, "In his Windows series, a group of twenty-two paintings made between April and December of 1912, Delaunay rejected painting’s traditional function as a window onto an imaginary world. Instead he turned to the pictorial surface as a place where the process of seeing itself could be recorded.", "WindowIcn.jpg", "Window.jpg", 55,39 );
+        Painting p = new Painting("Robert Delaunay", 1912, "WindowIcn.jpg", "Window.jpg", 55,39 );
         paintings1.add(p);
-        p = new Painting("Edvard Munch", 300000000, 1893, "The Scream is a composition created by Norwegian artist Edvard Munch in 1893. The agonized face in the painting has become one of the most iconic images of art, seen as symbolizing the anxiety of the human condition. Munch's work, including The Scream, had a formative influence on the Expressionist movement", "The_ScreamIcn.jpg", "The_Scream.jpg", 275,39 );
+        p = new Painting("Edvard Munch", 1893, "The_ScreamIcn.jpg", "The_Scream.jpg", 275,39 );
         paintings1.add(p);
-        p = new Painting("Vassily Kandinsky", 300000000, 1910, "Wassily Kandinsky’s “Murnau With Church” I is a painting created at the start of his career in 1910. This artwork was painted at the peak of Kandinsky’s involvement with Fauvism, which resulted in the bright swathes of color. Although Kandinsky utilized modernist elements such as thick paint application and overlapping planes of color to highlight an abstracted landscape, there are still recognizable forms of the church and landscape which demonstrate minimal references to representation.", "Murnau_With_ChurchIcn.jpg", "Murnau_With_Church.jpg", 510,42 );
+        p = new Painting("Vassily Kandinsky", 1910, "Murnau_With_ChurchIcn.jpg", "Murnau_With_Church.jpg", 510,42 );
         paintings1.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Expressionism1.png", "Expressionism1.png", 175,280 );
+        p = new Painting("Ogi", 2024, "Expressionism1.png", "Expressionism1.png", 175,280 );
         paintings1.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Expressionism2.png", "Expressionism2.png", 275,281 );
+        p = new Painting("Ogi", 2024, "Expressionism2.png", "Expressionism2.png", 275,281 );
         paintings1.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Expressionism3.png", "Expressionism3.png", 375,281 );
+        p = new Painting("Ogi", 2024, "Expressionism3.png", "Expressionism3.png", 375,281 );
         paintings1.add(p);
         
-        p = new Painting("Claude Monet", 300000000, 1872, "Impression, Sunrise is an 1872 painting by Claude Monet first shown at what would become known as the \"Exhibition of the Impressionists\" in Paris in April, 1874. The painting is credited with inspiring the name of the Impressionist movement.", "ImpressionIcn.jpg", "Impression.jpg", 56,38 );
+        p = new Painting("Claude Monet", 1872, "ImpressionIcn.jpg", "Impression.jpg", 56,38 );
         paintings2.add(p);
-        p = new Painting("Alfred Sisley", 300000000, 1877, "Alfred Sisley was born into an international family whose historical ties to both France and England went back several generations. In his immediate family, he was the youngest of four children and the only one to be born in Paris—on 30 October 1839. ", "Sisley_la_seine_au_point_du_jour_1877Icn.jpg", "Sisley_la_seine_au_point_du_jour_1877.jpg", 275,39 );
+        p = new Painting("Alfred Sisley", 1877, "Sisley_la_seine_au_point_du_jour_1877Icn.jpg", "Sisley_la_seine_au_point_du_jour_1877.jpg", 275,39 );
         paintings2.add(p);
-        p = new Painting("Edgar Degas", 300000000, 1878, "Degas also produced bronze sculptures, prints, and drawings. Degas is especially identified with the subject of dance; more than half of his works depict dancers.[3] Although Degas is regarded as one of the founders of Impressionism, he rejected the term, preferring to be called a realist, and did not paint outdoors as many Impressionists did.", "DancerIcn.jpg", "Dancer.jpg", 510,41);
+        p = new Painting("Edgar Degas", 1878, "DancerIcn.jpg", "Dancer.jpg", 510,41);
         paintings2.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Impressionism1.png", "Impressionism1.png", 175,280 );
+        p = new Painting("Ogi", 2024, "Impressionism1.png", "Impressionism1.png", 175,280 );
         paintings2.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Impressionism2.png", "Impressionism2.png", 275,281 );
+        p = new Painting("Ogi", 2024, "Impressionism2.png", "Impressionism2.png", 275,281 );
         paintings2.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Expressionism3.png", "Expressionism3.png", 375,281 );
+        p = new Painting("Ogi", 2024, "Expressionism3.png", "Expressionism3.png", 375,281 );
         paintings2.add(p);
         
-        p = new Painting("Caspar David Friedrich", 300000000, 1818, "Wanderer above the Sea of Fog is a painting by Caspar David Friedrich made in 1818. It depicts a man standing upon a rocky precipice with his back to the viewer; he is gazing out on a landscape covered in a thick sea of fog through which other ridges, trees, and mountains pierce, which stretches out into the distance indefinitely.", "WandererIcn.jpg", "Wanderer.jpg", 55,38 );
+        p = new Painting("Caspar David Friedrich", 1818, "WandererIcn.jpg", "Wanderer.jpg", 55,38 );
         paintings3.add(p);
-        p = new Painting("Theodore Gericault", 300000000, 1819, "info", "RaftIcn.jpg", "Raft.jpg", 276,40 );
+        p = new Painting("Theodore Gericault", 1819, "RaftIcn.jpg", "Raft.jpg", 276,40 );
         paintings3.add(p);
-        p = new Painting("Joseph M. W. Turner", 300000000, 1872, "info", "The_FightingIcn.jpg", "The_Fighting.jpg", 511,41 );
+        p = new Painting("Joseph M. W. Turner", 1872, "The_FightingIcn.jpg", "The_Fighting.jpg", 511,41 );
         paintings3.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Romanticism1.png", "Romanticism1.png", 175,280 );
+        p = new Painting("Ogi", 2024, "Romanticism1.png", "Romanticism1.png", 175,280 );
         paintings3.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Romanticism2.png", "Romanticism2.png", 275,281 );
+        p = new Painting("Ogi", 2024, "Romanticism2.png", "Romanticism2.png", 275,281 );
         paintings3.add(p);
-        p = new Painting("Ogi", 300000000, 2024, "our logo", "Romanticism3.png", "Romanticism3.png", 375,281 );
+        p = new Painting("Ogi", 2024, "Romanticism3.png", "Romanticism3.png", 375,281 );
         paintings3.add(p);
     }
     
@@ -146,6 +146,7 @@ public class MainFrame extends javax.swing.JFrame {
         jMenu11 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
         jMenu10 = new javax.swing.JMenu();
+        jMenu13 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -307,6 +308,9 @@ public class MainFrame extends javax.swing.JFrame {
         jMenu3.add(jMenu10);
 
         jMenuBar1.add(jMenu3);
+
+        jMenu13.setText("Добави картина");
+        jMenuBar1.add(jMenu13);
 
         setJMenuBar(jMenuBar1);
 
@@ -520,6 +524,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
+    private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
