@@ -14,7 +14,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu1ActionPerformed"/>
           </Events>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu4">
+            <Menu class="javax.swing.JMenu" name="jMenu1Item1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x41f;&#x440;&#x43e;&#x437;&#x43e;&#x440;&#x435;&#x446;"/>
               </Properties>
@@ -22,7 +22,7 @@
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu1Item1"/>
               </Events>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu5">
+            <Menu class="javax.swing.JMenu" name="jMenu1Item2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x41f;&#x438;&#x441;&#x44a;&#x43a;&#x44a;&#x442; "/>
               </Properties>
@@ -30,7 +30,7 @@
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu1Item2"/>
               </Events>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu6">
+            <Menu class="javax.swing.JMenu" name="jMenu1Item3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x41c;&#x443;&#x440;&#x43d;&#x430;&#x443; &#x441; &#x446;&#x44a;&#x440;&#x43a;&#x432;&#x430; I"/>
               </Properties>
@@ -50,28 +50,28 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu2ActionPerformed"/>
           </Events>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu7">
+            <Menu class="javax.swing.JMenu" name="jMenu2Item1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x418;&#x43c;&#x43f;&#x440;&#x435;&#x441;&#x438;&#x44f;, &#x438;&#x437;&#x433;&#x440;&#x44f;&#x432;&#x430;&#x449;&#x43e; &#x441;&#x43b;&#x44a;&#x43d;&#x446;&#x435;"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu7MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu2Item1MouseClicked"/>
               </Events>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu8">
+            <Menu class="javax.swing.JMenu" name="jMenu2Item2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x421;&#x435;&#x43d;&#x430; &#x432; &#x441;&#x440;&#x435;&#x434;&#x430;&#x442;&#x430; &#x43d;&#x430; &#x434;&#x435;&#x43d;&#x44f;"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu8MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu2Item2MouseClicked"/>
               </Events>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu9">
+            <Menu class="javax.swing.JMenu" name="jMenu2Item3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x422;&#x430;&#x43d;&#x446;&#x44c;&#x43e;&#x440;&#x43a;&#x430; &#x441; &#x431;&#x443;&#x43a;&#x435;&#x442; &#x446;&#x432;&#x435;&#x442;&#x44f; "/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu9MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu2Item3MouseClicked"/>
               </Events>
             </Menu>
           </SubComponents>
@@ -85,33 +85,33 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenu3ActionPerformed"/>
           </Events>
           <SubComponents>
-            <Menu class="javax.swing.JMenu" name="jMenu11">
+            <Menu class="javax.swing.JMenu" name="jMenu3Item1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x41f;&#x43e;&#x442;&#x44a;&#x432;&#x430;&#x43d;&#x435;&#x442;&#x43e; &#x43d;&#x430; &#x43c;&#x435;&#x434;&#x443;&#x437;&#x430;"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu11MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu3Item1MouseClicked"/>
               </Events>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu12">
+            <Menu class="javax.swing.JMenu" name="jMenu3Item2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x422;&#x435;&#x43c;&#x435;&#x440;&#x435;&#x440; &#x43d;&#x430; &#x431;&#x443;&#x43a;&#x441;&#x438;&#x440; &#x43a;&#x44a;&#x43c; &#x43f;&#x43e;&#x441;&#x43b;&#x435;&#x434;&#x43d;&#x438;&#x44f; &#x43f;&#x440;&#x438;&#x441;&#x442;&#x44a;&#x43d;"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu12MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu3Item2MouseClicked"/>
               </Events>
             </Menu>
-            <Menu class="javax.swing.JMenu" name="jMenu10">
+            <Menu class="javax.swing.JMenu" name="jMenu3Item3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x421;&#x442;&#x440;&#x430;&#x43d;&#x43d;&#x438;&#x43a; &#x43d;&#x430;&#x434; &#x43c;&#x43e;&#x440;&#x435; &#x43e;&#x442; &#x43c;&#x44a;&#x433;&#x43b;&#x430;"/>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu10MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu3Item3MouseClicked"/>
               </Events>
             </Menu>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu13">
+        <Menu class="javax.swing.JMenu" name="jMenu4">
           <Properties>
             <Property name="text" type="java.lang.String" value="&#x414;&#x43e;&#x431;&#x430;&#x432;&#x438; &#x43a;&#x430;&#x440;&#x442;&#x438;&#x43d;&#x430;"/>
           </Properties>
@@ -175,7 +175,7 @@
                       <Group type="102" attributes="0">
                           <Component id="jLblAuthorName" min="-2" pref="153" max="-2" attributes="0"/>
                           <EmptySpace pref="83" max="32767" attributes="0"/>
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonX" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -185,7 +185,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonX" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLblAuthorName" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -196,12 +196,12 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="jButtonX">
           <Properties>
             <Property name="text" type="java.lang.String" value="X"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonXActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLblAuthorName">

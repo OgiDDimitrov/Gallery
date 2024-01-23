@@ -130,30 +130,30 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelPaintingFullScreen = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jButtonX = new javax.swing.JButton();
         jLblAuthorName = new javax.swing.JLabel();
         jLblPainting = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
+        jMenu1Item1 = new javax.swing.JMenu();
+        jMenu1Item2 = new javax.swing.JMenu();
+        jMenu1Item3 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
-        jMenu7 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
-        jMenu9 = new javax.swing.JMenu();
+        jMenu2Item1 = new javax.swing.JMenu();
+        jMenu2Item2 = new javax.swing.JMenu();
+        jMenu2Item3 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
-        jMenu11 = new javax.swing.JMenu();
-        jMenu12 = new javax.swing.JMenu();
-        jMenu10 = new javax.swing.JMenu();
-        jMenu13 = new javax.swing.JMenu();
+        jMenu3Item1 = new javax.swing.JMenu();
+        jMenu3Item2 = new javax.swing.JMenu();
+        jMenu3Item3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("X");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonX.setText("X");
+        jButtonX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonXActionPerformed(evt);
             }
         });
 
@@ -170,13 +170,13 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(jPanelPaintingFullScreenLayout.createSequentialGroup()
                         .addComponent(jLblAuthorName, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
-                        .addComponent(jButton1))))
+                        .addComponent(jButtonX))))
         );
         jPanelPaintingFullScreenLayout.setVerticalGroup(
             jPanelPaintingFullScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelPaintingFullScreenLayout.createSequentialGroup()
                 .addGroup(jPanelPaintingFullScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(jButtonX)
                     .addComponent(jLblAuthorName))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLblPainting, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
@@ -198,29 +198,29 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jMenu4.setText("Прозорец");
-        jMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu1Item1.setText("Прозорец");
+        jMenu1Item1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu1Item1(evt);
             }
         });
-        jMenu1.add(jMenu4);
+        jMenu1.add(jMenu1Item1);
 
-        jMenu5.setText("Писъкът ");
-        jMenu5.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu1Item2.setText("Писъкът ");
+        jMenu1Item2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu1Item2(evt);
             }
         });
-        jMenu1.add(jMenu5);
+        jMenu1.add(jMenu1Item2);
 
-        jMenu6.setText("Мурнау с църква I");
-        jMenu6.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu1Item3.setText("Мурнау с църква I");
+        jMenu1Item3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu1Item3(evt);
             }
         });
-        jMenu1.add(jMenu6);
+        jMenu1.add(jMenu1Item3);
 
         jMenuBar1.add(jMenu1);
 
@@ -245,29 +245,29 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jMenu7.setText("Импресия, изгряващо слънце");
-        jMenu7.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu2Item1.setText("Импресия, изгряващо слънце");
+        jMenu2Item1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu7MouseClicked(evt);
+                jMenu2Item1MouseClicked(evt);
             }
         });
-        jMenu2.add(jMenu7);
+        jMenu2.add(jMenu2Item1);
 
-        jMenu8.setText("Сена в средата на деня");
-        jMenu8.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu2Item2.setText("Сена в средата на деня");
+        jMenu2Item2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu8MouseClicked(evt);
+                jMenu2Item2MouseClicked(evt);
             }
         });
-        jMenu2.add(jMenu8);
+        jMenu2.add(jMenu2Item2);
 
-        jMenu9.setText("Танцьорка с букет цветя ");
-        jMenu9.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu2Item3.setText("Танцьорка с букет цветя ");
+        jMenu2Item3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu9MouseClicked(evt);
+                jMenu2Item3MouseClicked(evt);
             }
         });
-        jMenu2.add(jMenu9);
+        jMenu2.add(jMenu2Item3);
 
         jMenuBar1.add(jMenu2);
 
@@ -283,34 +283,34 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jMenu11.setText("Потъването на медуза");
-        jMenu11.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu3Item1.setText("Потъването на медуза");
+        jMenu3Item1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu11MouseClicked(evt);
+                jMenu3Item1MouseClicked(evt);
             }
         });
-        jMenu3.add(jMenu11);
+        jMenu3.add(jMenu3Item1);
 
-        jMenu12.setText("Темерер на буксир към последния пристън");
-        jMenu12.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu3Item2.setText("Темерер на буксир към последния пристън");
+        jMenu3Item2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu12MouseClicked(evt);
+                jMenu3Item2MouseClicked(evt);
             }
         });
-        jMenu3.add(jMenu12);
+        jMenu3.add(jMenu3Item2);
 
-        jMenu10.setText("Странник над море от мъгла");
-        jMenu10.addMouseListener(new java.awt.event.MouseAdapter() {
+        jMenu3Item3.setText("Странник над море от мъгла");
+        jMenu3Item3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu10MouseClicked(evt);
+                jMenu3Item3MouseClicked(evt);
             }
         });
-        jMenu3.add(jMenu10);
+        jMenu3.add(jMenu3Item3);
 
         jMenuBar1.add(jMenu3);
 
-        jMenu13.setText("Добави картина");
-        jMenuBar1.add(jMenu13);
+        jMenu4.setText("Добави картина");
+        jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
 
@@ -372,11 +372,11 @@ public class MainFrame extends javax.swing.JFrame {
         jPanelPaintingFullScreen.setVisible(true);
     }//GEN-LAST:event_jMenu1Item3
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonXActionPerformed
         // TODO add your handling code here:
         
          jPanelPaintingFullScreen.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonXActionPerformed
 
     private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
         // TODO add your handling code here:
@@ -436,48 +436,48 @@ public class MainFrame extends javax.swing.JFrame {
         // init(1);
     }//GEN-LAST:event_jMenu1MouseEntered
 
-    private void jMenu7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu7MouseClicked
+    private void jMenu2Item1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2Item1MouseClicked
         // TODO add your handling code here:
         jLblAuthorName.setText("Claude Monet");
         jLblPainting.setIcon(new ImageIcon("src/resources/Impression.jpg"));
         jPanelPaintingFullScreen.setVisible(true);
-    }//GEN-LAST:event_jMenu7MouseClicked
+    }//GEN-LAST:event_jMenu2Item1MouseClicked
 
-    private void jMenu8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu8MouseClicked
+    private void jMenu2Item2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2Item2MouseClicked
         // TODO add your handling code here:
         jLblAuthorName.setText("Alfred Sisley");
         jLblPainting.setIcon(new ImageIcon("src/resources/Sisley_la_seine_au_point_du_jour_1877.jpg"));
         jPanelPaintingFullScreen.setVisible(true);
-    }//GEN-LAST:event_jMenu8MouseClicked
+    }//GEN-LAST:event_jMenu2Item2MouseClicked
 
-    private void jMenu9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu9MouseClicked
+    private void jMenu2Item3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2Item3MouseClicked
         // TODO add your handling code here:
         jLblAuthorName.setText("Edgar Degas");
         jLblPainting.setIcon(new ImageIcon("src/resources/Dancer.jpg"));
         jPanelPaintingFullScreen.setVisible(true);
-    }//GEN-LAST:event_jMenu9MouseClicked
+    }//GEN-LAST:event_jMenu2Item3MouseClicked
 
-    private void jMenu11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu11MouseClicked
+    private void jMenu3Item1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3Item1MouseClicked
         // TODO add your handling code here:
         
         jLblAuthorName.setText("Theodore Gericault");
         jLblPainting.setIcon(new ImageIcon("src/resources/Raft.jpg"));
         jPanelPaintingFullScreen.setVisible(true);
-    }//GEN-LAST:event_jMenu11MouseClicked
+    }//GEN-LAST:event_jMenu3Item1MouseClicked
 
-    private void jMenu12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu12MouseClicked
+    private void jMenu3Item2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3Item2MouseClicked
         // TODO add your handling code here:
         jLblAuthorName.setText("Joseph M. W. Turner");
         jLblPainting.setIcon(new ImageIcon("src/resources/The_Fighting.jpg"));
         jPanelPaintingFullScreen.setVisible(true);
-    }//GEN-LAST:event_jMenu12MouseClicked
+    }//GEN-LAST:event_jMenu3Item2MouseClicked
 
-    private void jMenu10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu10MouseClicked
+    private void jMenu3Item3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3Item3MouseClicked
         // TODO add your handling code here:
         jLblAuthorName.setText("Caspar David Friedrich");
         jLblPainting.setIcon(new ImageIcon("src/resources/Wanderer.jpg"));
         jPanelPaintingFullScreen.setVisible(true);
-    }//GEN-LAST:event_jMenu10MouseClicked
+    }//GEN-LAST:event_jMenu3Item3MouseClicked
 
               
     /**
@@ -517,22 +517,22 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonX;
     private javax.swing.JLabel jLblAuthorName;
     private javax.swing.JLabel jLblPainting;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
-    private javax.swing.JMenu jMenu11;
-    private javax.swing.JMenu jMenu12;
-    private javax.swing.JMenu jMenu13;
+    private javax.swing.JMenu jMenu1Item1;
+    private javax.swing.JMenu jMenu1Item2;
+    private javax.swing.JMenu jMenu1Item3;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu2Item1;
+    private javax.swing.JMenu jMenu2Item2;
+    private javax.swing.JMenu jMenu2Item3;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu3Item1;
+    private javax.swing.JMenu jMenu3Item2;
+    private javax.swing.JMenu jMenu3Item3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
-    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanelPaintingFullScreen;
     // End of variables declaration//GEN-END:variables
