@@ -212,7 +212,7 @@ public class LoginForm extends javax.swing.JFrame {
             if(loginSuccessful)
             {
                 this.dispose();
-                mf mainFrame = new mf(currentUser);
+                MainFrame mainFrame = new MainFrame(currentUser);
                 mainFrame.setVisible(true);
             }
             else
