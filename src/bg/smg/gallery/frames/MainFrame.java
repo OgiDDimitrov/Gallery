@@ -35,7 +35,6 @@ public class MainFrame extends javax.swing.JFrame {
         List<Painting> paintings3;
          String absolutePath ;
          JPanelWithBackground pnl;
-         JLabel imgNewPainting;
     /**
      * Creates new form MainFrame
      */
@@ -108,7 +107,7 @@ public class MainFrame extends javax.swing.JFrame {
                src.close();
                dest.close();
                ImageIcon imgIcon = new ImageIcon(absolutePath+"/"+file.getName());
-               
+               jLabelImageName.setText(file.getName());
                imgNewPainting.setIcon(imgIcon);
                imgNewPainting.setSize(imgIcon.getIconWidth(), imgIcon.getIconHeight());
            } catch (Exception ex) {
@@ -119,6 +118,39 @@ public class MainFrame extends javax.swing.JFrame {
 //          label.setText("Open command canceled");
        }
     }
+    
+    
+    public void paintingIconUpload(ActionEvent e) {
+       JFileChooser fileChooser = new JFileChooser();
+//       fileChooser.addChoosableFileFilter(new ImageFilter());
+       fileChooser.setAcceptAllFileFilterUsed(false);
+
+       int option = fileChooser.showOpenDialog(this);
+       if(option == JFileChooser.APPROVE_OPTION){
+          File file = fileChooser.getSelectedFile();
+//          label.setText("File Selected: " + file.getName());
+          try {               
+               Path resourceDirectory = Paths.get("src","resources");
+               String absolutePath = resourceDirectory.toFile().getAbsolutePath();
+              
+               FileChannel src = new FileInputStream(file).getChannel();
+               FileChannel dest = new FileOutputStream(new File(absolutePath+"/"+file.getName())).getChannel();
+               dest.transferFrom(src, 0, src.size());
+               src.close();
+               dest.close();
+               ImageIcon imgIcon = new ImageIcon(absolutePath+"/"+file.getName());
+               jLabelIconName.setText(file.getName());
+               imgNewPaintingIcon.setIcon(imgIcon);
+               imgNewPaintingIcon.setSize(imgIcon.getIconWidth(), imgIcon.getIconHeight());
+           } catch (Exception ex) {
+               // TODO Auto-generated catch block
+               ex.printStackTrace();
+           }
+       }else{
+//          label.setText("Open command canceled");
+       }
+    }
+
     
     private void loadPaintings(){
         //TODO file read
@@ -177,10 +209,17 @@ public class MainFrame extends javax.swing.JFrame {
         jLblAuthorName = new javax.swing.JLabel();
         jLblPainting = new javax.swing.JLabel();
         jPanelNewPainting = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        jTxtFieldYear = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        imgNewPainting = new javax.swing.JLabel();
+        imgNewPaintingIcon = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jTxtFieldAuthorName1 = new javax.swing.JTextField();
+        jLabelImageName = new javax.swing.JLabel();
+        jLabelIconName = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -231,9 +270,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTextField1.setText("jTextField1");
-
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Year");
 
         jButton2.setText("Save");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -242,12 +279,21 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Upload");
+        jButton3.setText("Upload FullScreen Image");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
+
+        jButton4.setText("Upload Icon");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Author");
 
         javax.swing.GroupLayout jPanelNewPaintingLayout = new javax.swing.GroupLayout(jPanelNewPainting);
         jPanelNewPainting.setLayout(jPanelNewPaintingLayout);
@@ -260,23 +306,51 @@ public class MainFrame extends javax.swing.JFrame {
                         .addComponent(jButton2))
                     .addGroup(jPanelNewPaintingLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(jLabel1)
-                        .addGap(65, 65, 65)
                         .addGroup(jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addGap(51, 51, 51)
+                        .addGroup(jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTxtFieldAuthorName1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(296, Short.MAX_VALUE))
+                            .addComponent(jButton4)
+                            .addGroup(jPanelNewPaintingLayout.createSequentialGroup()
+                                .addComponent(imgNewPainting, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82)
+                                .addComponent(jLabelImageName))
+                            .addGroup(jPanelNewPaintingLayout.createSequentialGroup()
+                                .addComponent(imgNewPaintingIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(62, 62, 62)
+                                .addComponent(jLabelIconName))
+                            .addComponent(jTxtFieldYear, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(278, Short.MAX_VALUE))
         );
         jPanelNewPaintingLayout.setVerticalGroup(
             jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelNewPaintingLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addContainerGap()
                 .addGroup(jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtFieldAuthorName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtFieldYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addGap(18, 18, 18)
+                .addGap(7, 7, 7)
                 .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 240, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(imgNewPainting, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelImageName))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelNewPaintingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(imgNewPaintingIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
+                    .addGroup(jPanelNewPaintingLayout.createSequentialGroup()
+                        .addComponent(jLabelIconName)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton2)
                 .addGap(56, 56, 56))
         );
@@ -617,13 +691,22 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Painting p = new Painting(jTextField1.getText(), 1912, "WindowIcn.jpg", "Window.jpg", 55,39 );
+        int year = (int) Integer.valueOf(jTxtFieldYear.getText());
+        String authorName = jTxtFieldAuthorName1.getText();
+        String image = jLabelImageName.getText();
+        String icon = jLabelIconName.getText();
+        Painting p = new Painting(authorName, year, "WindowIcn.jpg", "Window.jpg", 55,39 );
         paintings1.add(p);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         paintingUpload(evt);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        paintingIconUpload(evt);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
               
     /**
@@ -663,10 +746,16 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel imgNewPainting;
+    private javax.swing.JLabel imgNewPaintingIcon;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelIconName;
+    private javax.swing.JLabel jLabelImageName;
     private javax.swing.JLabel jLblAuthorName;
     private javax.swing.JLabel jLblPainting;
     private javax.swing.JMenu jMenu1;
@@ -685,6 +774,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanelNewPainting;
     private javax.swing.JPanel jPanelPaintingFullScreen;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTxtFieldAuthorName1;
+    private javax.swing.JTextField jTxtFieldYear;
     // End of variables declaration//GEN-END:variables
 }
